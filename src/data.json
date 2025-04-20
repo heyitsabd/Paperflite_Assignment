@@ -1,0 +1,98 @@
+{
+    "images": {
+      "search": "/images/search.png",
+      "navIcons": [
+        "/images/nav-1.png",
+        "/images/nav-2.png",
+        "/images/nav-3.png",
+        "/images/nav-4.png",
+        "/images/nav-5.png"
+      ],
+      "bottomIcons": [
+        "/images/fan-like-icon-2.png",
+        "/images/four-dots.png"
+      ],
+      "headingIcons": {
+        "fanLike": "/images/fan-like-icon.png",
+        "textSize": "/images/text-size.png",
+        "bin": "/images/bin.png",
+        "copy": "/images/copy.png",
+        "add": "/images/add.png"
+      },
+      "collectionImages": [
+        "/images/collectionImages/pic1.jpeg",
+        "/images/collectionImages/pic2.jpeg",
+        "/images/collectionImages/pic3.jpeg",
+        "/images/collectionImages/pic4.jpeg"
+      ]
+    },
+    "styles": {
+      "backgroundMain": "#EFEFEF",
+      "backgroundContent": "#FAFAFA",
+      "popupBackground": "#FFFFFF",
+      "popupButtonColor": "#E51058",
+      "popupTextColor": "#FFFFFF"
+    },
+    "popup": {
+      "title": "Create New Collection",
+      "placeholder": "Collection Name",
+      "fileAcceptImage": "image/*",
+      "fileAcceptMultiple": "image/*,video/*,.pdf,.doc,.docx",
+      "cancelButtonText": "Cancel",
+      "saveButtonText": "Save"
+    },
+    "heading": {
+      "title": "collections",
+      "subtitle": "personalized content storyboards",
+      "searchPlaceholder": "Type here to search",
+      "createButtonText": "Create new collection"
+    },
+    "dummyCollections": [
+      {
+        "name": "Vacation Photos",
+        "cover": "/images/collectionImages/pic1.jpeg",
+        "files": [
+          "beach.jpg",
+          "mountain.jpeg",
+          "city.png"
+        ]
+      },
+      {
+        "name": "Work Documents",
+        "cover": "/images/collectionImages/pic2.jpeg",
+        "files": [
+          "resume.pdf",
+          "report.docx",
+          "notes.txt"
+        ]
+      },
+      
+      {
+        "name": "Event Videos",
+        "cover": "/images/collectionImages/pic3.jpeg",
+        "files": [
+          "party.mp4",
+          "presentation.mov"
+        ]
+      },
+      {
+        "name": "Mixed Media",
+        "cover": "/images/collectionImages/pic4.jpeg",
+        "files": [
+          "image.png",
+          "video.mkv",
+          "doc.txt"
+        ]
+      }
+    ],
+    "sorting": {
+      "options": [
+        { "label": "All files", "value": "all" },
+        { "label": "Photos", "value": "photos" },
+        { "label": "Video", "value": "video" },
+        { "label": "Document", "value": "document" }
+      ],
+      "sortBy": "Created date"
+    }
+  }
+  

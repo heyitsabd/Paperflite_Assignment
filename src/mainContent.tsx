@@ -5,7 +5,7 @@ import MainContentDisplay from "./MainContentFiles/MainContentDisplay";
 
 function MainContent(): JSX.Element {
   return (
-    <div className="w-full h-full">
+    <div className="w-full h-full overflow-y-auto">
       <HeadingAndSearchContent />
       <div>
         <SortingContent />

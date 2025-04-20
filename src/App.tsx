@@ -1,25 +1,36 @@
 import "./App.css";
 import MainContent from "./mainContent";
+import data from "./data.json";
 
-function App() {
+const App: React.FC = () => {
+  const { images, styles } = data;
+
   return (
-    <div className="bg-[#EFEFEF] h-screen flex flex-col lg:flex-row items-center pt-2 pb-2 pr-0 lg:pr-2 ">
-      <div className="flex flex-row lg:flex-col justify-between h-[5%] lg:h-full w-[100vw] lg:w-[5%] p-4">
+    <div className={`bg-[${styles.backgroundMain}] h-screen flex flex-col lg:flex-row lg:items-center`}>
+ 
+      <div className="flex flex-row lg:flex-col justify-between lg:justify-around items-center w-full lg:w-[5%] h-[5%] lg:h-full p-4">
+        <div className="flex flex-row lg:flex-col  gap-2 md:gap-8">
+          <div className="flex flex-row lg:flex-col gap-2">
+            <img src={images.search} height="20px" width="20px" />
+          </div>
+          <div className="flex flex-row lg:flex-col gap-2">
+            {images.navIcons.map((icon, index) => (
+              <img key={index} src={icon} height="20px" width="20px" />
+            ))}
+          </div>
+        </div>
         <div className="flex flex-row lg:flex-col gap-2">
-          <h1>Hii</h1>
-          <h1>Hello</h1>
-          <h1>Hey</h1>
-        </div> 
-        <div className="flex flex-row lg:flex-col gap-2">
-          <h1>Tata</h1>
-          <h1>Bye</h1>
+          {images.bottomIcons.map((icon, index) => (
+            <img key={index} src={icon} height="20px" width="20px" />
+          ))}
         </div>
       </div>
-      <div className="bg-[#FAFAFA] flex text-black p-4 h-full w-[95vw] lg:w-[100vw] rounded-2xl shadow-2xl">
-        <MainContent/>
+      <div className={`bg-white flex flex-grow h-full w-full p-4 lg:h-[99%] overflow-hidden rounded-2xl shadow-2xl`}>
+
+        <MainContent />
       </div>
     </div>
   );
-}
+};
 
 export default App;
