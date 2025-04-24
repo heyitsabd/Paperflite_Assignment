@@ -60,7 +60,7 @@
     left: 0.5rem;
     top: 50%;
     transform: translateY(-50%);
-    color: #9ca3af; /* Tailwind's gray-400 */
+    color: #9ca3af; 
   }
   
   .search-input {
@@ -118,13 +118,13 @@
     border: 1px solid #E0E0E0;
     border-radius: 9999px;
     padding: 0.5rem 1rem;
-    color: #4b5563; /* Tailwind's gray-800 */
+    color: #4b5563; 
     font-weight: 500;
     cursor: pointer;
     transition: background-color 0.3s ease;
   }
   
   .create-button:hover {
-    background-color: #f3f4f6; /* Tailwind's gray-100 */
+    background-color: #f3f4f6; 
   }
   

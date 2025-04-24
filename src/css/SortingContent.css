@@ -69,7 +69,7 @@
   
   .add-button:hover img {
     
-    opacity: 1; /* Optionally, you can hide the image on hover if you want to focus on the text */
+    opacity: 1;
   }
   
   
@@ -90,7 +90,7 @@
   
   .filter-button.inactive {
     border: 1px solid #dbdbdb;
-    color: #4b5563; /* Tailwind's gray-700 */
+    color: #4b5563; 
   }
   
   .sort-and-view-container {
@@ -103,7 +103,7 @@
   
   .sort-by-text {
     font-size: 0.875rem;
-    color: #4b5563; /* Tailwind's gray-700 */
+    color: #4b5563; 
   }
   
   .sort-by-details {
@@ -127,6 +127,6 @@
   }
   
   .list-view-button:hover {
-    background-color: #f3f4f6; /* Tailwind's gray-100 */
+    background-color: #f3f4f6;
   }
   
