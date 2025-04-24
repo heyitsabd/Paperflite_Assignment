@@ -1,7 +1,8 @@
 {
     "images": {
-      "search": "/images/search.png",
+    
       "navIcons": [
+        "/images/search.png",
         "/images/nav-1.png",
         "/images/nav-2.png",
         "/images/nav-3.png",
@@ -27,7 +28,7 @@
       ]
     },
     "styles": {
-      "backgroundMain": "#EFEFEF",
+      "backgroundMain": "#eeefee",
       "backgroundContent": "#FAFAFA",
       "popupBackground": "#FFFFFF",
       "popupButtonColor": "#E51058",
@@ -75,6 +76,8 @@
           "presentation.mov"
         ]
       },
+      
+      
       {
         "name": "Mixed Media",
         "cover": "/images/collectionImages/pic4.jpeg",

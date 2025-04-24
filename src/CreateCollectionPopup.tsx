@@ -1,5 +1,6 @@
 import { useState } from "react";
 import data from "./data.json";
+import './css/CreateCollectionPopup.css';
 
 interface CreateCollectionPopupProps {
   isOpen: boolean;
@@ -29,35 +30,35 @@ const CreateCollectionPopup = ({ isOpen, onClose, onSubmit }: CreateCollectionPo
   };
 
   return (
-    <div className="fixed inset-0 bg-black/80 flex items-center justify-center z-50 px-2">
-      <div className="bg-white p-6 rounded-lg shadow-lg w-[90%] max-w-full md:w-[500px]">
-        <h2 className="text-xl font-bold mb-4">{popup.title}</h2>
+    <div className="popup-overlay">
+      <div className="popup-container">
+        <h2 className="popup-title">{popup.title}</h2>
         <form className="space-y-4" onSubmit={handleSubmit}>
           <input
             type="text"
             placeholder={popup.placeholder}
             value={collectionName}
             onChange={(e) => setCollectionName(e.target.value)}
-            className="w-full border px-3 py-2 rounded text-sm sm:text-base"
+            className="popup-input"
           />
           <input
             type="file"
             accept={popup.fileAcceptImage}
             onChange={(e) => setCoverFile(e.target.files?.[0] || null)}
-            className="w-full"
+            className="popup-file-input"
           />
           <input
             type="file"
             accept={popup.fileAcceptMultiple}
             multiple
             onChange={(e) => setFiles(Array.from(e.target.files || []))}
-            className="w-full"
+            className="popup-file-input"
           />
-          <div className="flex justify-end gap-2">
+          <div className="popup-button-container">
             <button
               type="button"
               onClick={onClose}
-              className="px-4 py-2 border rounded"
+              className="popup-button popup-cancel-button"
             >
               {popup.cancelButtonText}
             </button>
@@ -67,7 +68,7 @@ const CreateCollectionPopup = ({ isOpen, onClose, onSubmit }: CreateCollectionPo
                 backgroundColor: styles.popupButtonColor,
                 color: styles.popupTextColor,
               }}
-              className="px-4 py-2 rounded"
+              className="popup-button popup-save-button"
             >
               {popup.saveButtonText}
             </button>

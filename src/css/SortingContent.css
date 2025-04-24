@@ -1,0 +1,132 @@
+/* SortingContent.css */
+
+.sorting-container {
+    display: flex;
+    flex-direction: column;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    gap: 1rem;
+    width: 100%;
+  }
+  
+  @media (min-width: 768px) {
+    .sorting-container {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+  
+  .add-filter-buttons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0.75rem;
+  }
+  
+  .add-button {
+    border-radius: 50px;
+    border: 2px dotted #dbdbdb;
+    padding: 0.625rem;
+    height: 2.5rem;
+    width: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: width 0.3s ease;
+    position: relative; 
+  }
+  .add-button:hover {
+    width: 7rem; 
+    justify-content: flex-start; 
+    transition: width 0.6s ease-out;
+  }
+  
+
+  
+  .add-button .add-text {
+    position: absolute;
+    left: 1.8rem;
+    opacity: 0;
+    transition: opacity 0.3s ease 0.3s, transform 0.3s ease 0.1;
+    font-size: 0.875rem;
+    color: #333;
+    white-space: nowrap;
+    pointer-events: none;
+  }
+  .add-button:hover .add-text {
+    opacity: 1; 
+    color: #e51058;
+  }
+  
+  .add-button img {
+    transition: opacity 0.3s ease;
+  }
+  
+  .add-button:hover img {
+    
+    opacity: 1; /* Optionally, you can hide the image on hover if you want to focus on the text */
+  }
+  
+  
+  .filter-button {
+    border-radius: 9999px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    font-size: 0.875rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .filter-button.active {
+    background-color: #e51058;
+    color: white;
+  }
+  
+  .filter-button.inactive {
+    border: 1px solid #dbdbdb;
+    color: #4b5563; /* Tailwind's gray-700 */
+  }
+  
+  .sort-and-view-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0.75rem;
+  }
+  
+  .sort-by-text {
+    font-size: 0.875rem;
+    color: #4b5563; /* Tailwind's gray-700 */
+  }
+  
+  .sort-by-details {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+  }
+  
+  .list-view-button {
+    height: 2.5rem;
+    width: 2.5rem;
+    border: 1px solid #dbdbdb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .list-view-button:hover {
+    background-color: #f3f4f6; /* Tailwind's gray-100 */
+  }
+  

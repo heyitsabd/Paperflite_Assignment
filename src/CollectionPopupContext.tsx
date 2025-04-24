@@ -8,6 +8,7 @@ interface CollectionPopupContextType {
   setActiveType: (type: string) => void;
   searchQuery: string;
   setSearchQuery: (query: string) => void;
+  
 }
 
 const CollectionPopupContext = createContext<CollectionPopupContextType | undefined>(undefined);
